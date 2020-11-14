@@ -3,6 +3,8 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'beeender/Comrade'
 Plug 'preservim/nerdtree'
 Plug 'vim-airline/vim-airline'
+Plug 'justinmk/vim-sneak'
+let g:sneak#label = 1
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
@@ -32,16 +34,29 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-rooter'
+Plug 'mhinz/vim-startify'
+Plug 'vim-scripts/pylint.vim'
+Plug 'liuchengxu/vim-which-key'
+nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
+
+Plug 'jacoborus/tender.vim'
+if (has("termguicolors"))
+ set termguicolors
+endif
+
 
 call plug#end()
 
 let g:deoplete#enable_at_startup = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
+let g:airline_theme = 'tender'
 set expandtab
 set shiftwidth=4
 
 let mapleader = " "
 let g:comrade_key_fix="<m-f>"
 source ~/.config/nvim/configs/fzf.vim
-"let bnext="<c- >"
+syntax enable
+colorscheme tender
+set timeoutlen=500
