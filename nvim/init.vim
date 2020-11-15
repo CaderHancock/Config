@@ -1,3 +1,4 @@
+set number relativenumber
 call plug#begin('/home/cader/.local/share/nvim/site/autoload')
 "Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'beeender/Comrade'
@@ -38,7 +39,6 @@ Plug 'airblade/vim-rooter'
 Plug 'mhinz/vim-startify'
 Plug 'vim-scripts/pylint.vim'
 Plug 'liuchengxu/vim-which-key'
-nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
 
 Plug 'jacoborus/tender.vim'
 if (has("termguicolors"))
@@ -55,9 +55,14 @@ let g:airline_theme = 'tender'
 set expandtab
 set shiftwidth=4
 
-let mapleader = " "
+let g:mapleader = "\<Space>"
+let g:maplocalleader = ','
+nnoremap <silent> <leader>      :<c-u>WhichKey '<Space>'<CR>
+nnoremap <silent> <localleader> :<c-u>WhichKey  ','<CR>
 let g:comrade_key_fix="<m-f>"
 source ~/.config/nvim/configs/fzf.vim
+source ~/.config/nvim/configs/leader-mode.vim
+source ~/.config/nvim/configs/java-minor-mode.vim
 syntax enable
 colorscheme tender
 set timeoutlen=500
