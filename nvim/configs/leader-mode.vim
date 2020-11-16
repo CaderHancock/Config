@@ -10,13 +10,24 @@ nmap <leader>Cx <Plug>(coc-fix-current)
 nmap <leader>Cc <Plug>(coc-codelens-action)
 nmap <leader>Cg <Plug>(coc-diagnostic-next)
 nmap <leader>Cn <Plug>(coc-diagnostic-next-error)
-nmap <leader>fs :Git status<cr>
-nmap <leader>fl :Git log<cr>
-nmap <leader>fg :Git commit -S<cr>
-nmap <leader>fa :Git add 
-nmap <leader>fv :GV<cr>
-nmap <leader>f! :Git stash<cr>
+nmap <leader>gs :Git status<cr>
+nmap <leader>gl :Git log<cr>
+nmap <leader>gg :Git commit -S<cr>
+nmap <leader>ga :Git add 
+nmap <leader>gv :GV<cr>
+nmap <leader>g! :Git stash<cr>
 nmap <leader>n  :bnext<cr>
 nmap <leader>v  :bprevious<cr>
 nmap <leader>N  :NERDTree<cr>
 nmap <leader>W  :set autowriteall<cr>
+nmap <leader>f  :FZF<cr>
+nmap <leader>F  :Files<cr>
+nmap <leader>r  :Rg<cr>
+nmap <leader>s  :Startify<cr>
+nmap <leader>t  :TagbarToggle<cr>
+
+"map <C-f> :Files<CR>
+"map <leader>b :Buffers<CR>
+"nnoremap <leader>g :Rg<CR>
+"nnoremap <leader>t :Tags<CR>
+"nnoremap <leader>m :Marks<CR>

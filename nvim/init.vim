@@ -39,6 +39,7 @@ Plug 'airblade/vim-rooter'
 Plug 'mhinz/vim-startify'
 Plug 'vim-scripts/pylint.vim'
 Plug 'liuchengxu/vim-which-key'
+Plug 'preservim/tagbar'
 
 Plug 'jacoborus/tender.vim'
 if (has("termguicolors"))
