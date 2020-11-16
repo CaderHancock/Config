@@ -19,3 +19,4 @@ nmap <leader>f! :Git stash<cr>
 nmap <leader>n  :bnext<cr>
 nmap <leader>v  :bprevious<cr>
 nmap <leader>N  :NERDTree<cr>
+nmap <leader>W  :set autowriteall<cr>
