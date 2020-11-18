@@ -5,6 +5,9 @@ Plug 'beeender/Comrade'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdtree'
 Plug 'vim-airline/vim-airline'
+let g:airline_left_sep="\ue0c6"
+let g:airline_right_sep="\ue0c7"
+
 Plug 'justinmk/vim-sneak'
 let g:sneak#label = 1
 Plug 'vim-airline/vim-airline-themes'
@@ -62,6 +65,7 @@ nnoremap <silent> <leader>      :<c-u>WhichKey '<Space>'<CR>
 nnoremap <silent> <localleader> :<c-u>WhichKey  ','<CR>
 let g:comrade_key_fix="<m-f>"
 source ~/.config/nvim/configs/fzf.vim
+source ~/.config/nvim/configs/python-minor-mode.vim
 source ~/.config/nvim/configs/leader-mode.vim
 source ~/.config/nvim/configs/java-minor-mode.vim
 syntax enable
