@@ -13,6 +13,7 @@ nmap <leader>Cn <Plug>(coc-diagnostic-next-error)
 nmap <leader>gs :Git status<cr>
 nmap <leader>gl :Git log<cr>
 nmap <leader>gg :Git commit -S<cr>
+nmap <leader>gG :Git commit<cr>
 nmap <leader>ga :Git add 
 nmap <leader>gv :GV<cr>
 nmap <leader>g! :Git stash<cr>
@@ -25,7 +26,7 @@ nmap <leader>F  :Files<cr>
 nmap <leader>r  :Rg<cr>
 nmap <leader>s  :Startify<cr>
 nmap <leader>t  :TagbarToggle<cr>
-
+nmap <leader>b  :BLines<CR>
 "map <C-f> :Files<CR>
 "map <leader>b :Buffers<CR>
 "nnoremap <leader>g :Rg<CR>
