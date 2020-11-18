@@ -19,7 +19,7 @@ nmap <leader>gv :GV<cr>
 nmap <leader>g! :Git stash<cr>
 nmap <leader>n  :bnext<cr>
 nmap <leader>v  :bprevious<cr>
-nmap <leader>N  :NERDTree<cr>
+nmap <leader>N  :NERDTreeToggle<cr>
 nmap <leader>W  :set autowriteall<cr>
 nmap <leader>f  :FZF<cr>
 nmap <leader>F  :Files<cr>
