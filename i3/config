@@ -9,9 +9,10 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 exec screen -d -m rtorrent
-exec pulseaudio --kill
-exec pulseaudio --daemonize=true
-exec mpd --no-daemon 
+#exec pulseaudio --kill
+#exec pulseaudio --daemonize=true
+#exec mpd --no-daemon 
+exec feh --bg-fill ~/wallpapers/wallpaper
 #exec --no-startup-id dockd --daemon
 exec picom
 exec dunst
@@ -25,8 +26,8 @@ set $mod Mod4
 exec feh --bg-scale /home/cader/wallpapers/wallpaper
 #exec mpd /home/cader/.config/mpd/mpd.conf
 #exec mictray
-gaps inner 3
-gaps outer -3 
+#gaps inner 3
+#gaps outer -3 
 #smart_gaps on
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -58,12 +59,14 @@ floating_modifier $mod
 #bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+g exec gqrx
 bindsym $mod+Return exec konsole 
-#bindsym $mod+Ctrl+space exec kitty
+#bindsym $mod+Return exec alacritty 
+bindsym $mod+c exec /home/cader/.emacs.d/bin/org-capture
 bindsym $mod+Shift+f exec firefox
 bindsym $mod+q exec qutebrowser
 bindsym $mod+z exec i3lock -i ~/wallpapers/ducati1.png
 # kill focused window
-bindsym $mod+Shift+q kill
+bindsym $mod+Ctrl+q kill
+bindsym $mod+Shift+x exec emacsclient --create-frame --alternate-editor=""
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec rofi -show run -show-icons
@@ -147,7 +150,7 @@ bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 
 bindsym $mod+Shift+c scratchpad show
-bindsym $mod+Shift+x move scratchpad
+bindsym $mod+Shift+z move scratchpad
 
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
