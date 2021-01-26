@@ -1,0 +1,32 @@
+[Desktop Entry]
+DefaultProfile=Profile 3.profile
+
+[Favorite Profiles]
+Favorites=
+
+[KonsoleWindow]
+SaveGeometryOnExit=false
+ShowMenuBarByDefault=false
+
+[MainWindow]
+DP1 LVDS1 XPosition=1080
+DP1 LVDS1 YPosition=691
+LVDS1 DP-1-0 XPosition=0
+LVDS1 DP-1-0 YPosition=0
+LVDS1 DP1 XPosition=0
+LVDS1 DP1 YPosition=0
+LVDS1 Height 768=752
+LVDS1 Width 1366=455
+LVDS1 XPosition=683
+LVDS1 YPosition=0
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAAAccAAALwAAAABAAAAAQAAAAIAAAACPwAAAAA
+ToolBarsMovable=Disabled
+XWAYLAND0 Height 768=768
+XWAYLAND0 Width 1366=1366
+XWAYLAND0 Window-Maximized 768x1366=true
+XWAYLAND0 XPosition=684
+XWAYLAND0 YPosition=20
+
+[Notification Messages]
+CloseAllTabs=true
