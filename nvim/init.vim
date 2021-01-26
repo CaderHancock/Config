@@ -1,8 +1,10 @@
 set number relativenumber
 call plug#begin('/home/cader/.local/share/nvim/site/autoload')
+"Plug 'puremourning/vimspector'
 "Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'beeender/Comrade'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"Plug 'neoclide/coc.nvim', { 'do': 'yarn install --frozen-lockfile'}
 Plug 'preservim/nerdtree'
 Plug 'vim-airline/vim-airline'
 let g:airline_left_sep="\ue0c6"
@@ -24,6 +26,7 @@ let g:tex_conceal='abdmg'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 
+let g:UltiSnipsExpandTrigger="<nop>"
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
@@ -45,13 +48,17 @@ Plug 'liuchengxu/vim-which-key'
 Plug 'preservim/tagbar'
 
 Plug 'jacoborus/tender.vim'
-if (has("termguicolors"))
- set termguicolors
-endif
-
+"if (has("termguicolors"))
+ "set termguicolors
+"endif
+Plug 'vimwiki/vimwiki'
+Plug 'jamessan/vim-gnupg'
+Plug 'jceb/vim-orgmode'
+Plug 'mfussenegger/nvim-dap'
 
 call plug#end()
-
+let g:vimwiki_folding='list'
+let g:GPGFilePattern = '*.\(gpg\|asc\|pgp\)\(.wiki\)\='
 let g:deoplete#enable_at_startup = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
@@ -71,3 +78,4 @@ source ~/.config/nvim/configs/java-minor-mode.vim
 syntax enable
 colorscheme tender
 set timeoutlen=500
+set colorcolumn=80

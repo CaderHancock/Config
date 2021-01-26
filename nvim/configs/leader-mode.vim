@@ -27,6 +27,7 @@ nmap <leader>r  :Rg<cr>
 nmap <leader>s  :Startify<cr>
 nmap <leader>t  :TagbarToggle<cr>
 nmap <leader>b  :BLines<CR>
+nmap <leader>l  :Lines
 "map <C-f> :Files<CR>
 "map <leader>b :Buffers<CR>
 "nnoremap <leader>g :Rg<CR>
